@@ -8,241 +8,283 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=VT323&display=swap"
+    rel="stylesheet">
 
   <title>CRUZADINHA</title>
 </head>
 
 <body>
-  <div>
-  </div>
+  
   <header>
     <div class="container">
       <div>
-      <h2>Olá Usuario</h2>
-      <div class="hearts"><p>Você tem: </p> <span id="heart"></span></div>
+        <h2>Olá, <span id="nomeTela"></span></h2>
+        <div class="hearts">
+          <p>Você tem: </p> <span id="heart"></span>
+        </div>
       </div>
       <div>
-      <button>VERIFICAR RESPOSTA</button>
-      <button>REFAZER CRUZADINHA</button>
-    </div>
+        <button onclick="verificarResposta()">VERIFICAR RESPOSTA</button>
+        <button onclick="criarCruzadinha()">REFAZER CRUZADINHA</button>
+      </div>
     </div>
   </header>
   <section>
-    <div class="cruzadinha">
-      <input type="text"><input type="text"><input type="text"><input type="text">
-      <input type="text"><input type="text"><input type="text"><input type="text">
-      <input type="text"><input type="text"><input type="text"><input type="text">
-      <input type="text"><input type="text"><input type="text" placeholder="14"><input type="text">
-      <input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input tye="text"><input type="text"><input type="text"><input type="text" placeholder="7"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text" placeholder="13"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text" placeholder="5"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text" placeholder="9"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"
-        placeholder="3"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text" placeholder="10"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"
-        placeholder="11"><input type="text"><input type="text"><input type="text"><input type="text"
-        placeholder="1"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text" placeholder="15"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text" placeholder="4"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"
-        placeholder="2"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text" placeholder="12"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text" placeholder="8"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text" placeholder="6"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
-        type="text"><input type="text">
+    <div class="inicio">
+      <div class="content-text">
+        <p>Pronto para cumprir o desafio?</p>
+        <p>Você tem 3 chances para realizar uma cruzadinha com 15 palavras que estão no contexto de arquitetura
+          computacional após perder todas as suas vidas o jogo é reiniciado e você começa tudo novamente.</p>
+        <div class="campo">
+          <label for="">INFORME O SEU NOME</label>
+          <input type="text" placeholder="Informe apenas o primeiro e o segundo nome">
+          <button onclick="criarCruzadinha()">Começar</button>
+        </div>
+      </div>
     </div>
+    
+      <div class="cruzadinha">
+        <input type="text"><input type="text"><input type="text"><input type="text">
+        <input type="text"><input type="text"><input type="text"><input type="text">
+        <input type="text"><input type="text"><input type="text"><input type="text">
+        <input type="text"><input type="text"><input type="text" placeholder="14"><input type="text">
+        <input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input tye="text"><input type="text"><input type="text"><input type="text" placeholder="7"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text" placeholder="13"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"
+          placeholder="5"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text" placeholder="9"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text" placeholder="3"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"
+          placeholder="10"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text" placeholder="11"><input type="text"><input
+          type="text"><input type="text"><input type="text" placeholder="1"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text" placeholder="15"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text" placeholder="4"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text" placeholder="2"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"
+          placeholder="12"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"
+          placeholder="8"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text" placeholder="6"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input
+          type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text">
+      </div>
 
-    <div class="perguntas">
+      <div class="perguntas">
 
-      <div class="cards">
-        <div class="card">
-          <p> 1 - "Cérebro" do computador </p>
+        <div class="cards">
+          <div class="card">
+            <p> 1 - "Cérebro" do computador </p>
+          </div>
+          <div class="card">
+            <p> 2 - Responsável por operações matemáticas e booleanas </p>
+          </div>
+          <div class="card">
+            <p> 3 Armazena os dados da CPU</p>
+          </div>
+          <div class="card">
+            <p> 4 - Memória interna principal </p>
+          </div>
+          <div class="card">
+            <p> 5 - Memória interna de leitura </p>
+          </div>
+          <div class="card">
+            <p> 6 - Pode ser gravada, apagada e regravada</p>
+          </div>
+          <div class="card">
+            <p> 7 - Muito presente em SSD</p>
+          </div>
+          <div class="card">
+            <p> 8 - Método que ignora a CPU </p>
+          </div>
+          <div class="card">
+            <p> 9 - Processador mais comprado da atualidade </p>
+          </div>
+          <div class="card">
+            <p> 10 - Processador mais famoso da atualidade</p>
+          </div>
+          <div class="card">
+            <p> 11 - Usa dois núcleos </p>
+          </div>
+          <div class="card">
+            <p> 12 - Usa quatro núcleos </p>
+          </div>
+          <div class="card">
+            <p> 13 - Memória auxiliar </p>
+          </div>
+          <div class="card">
+            <p> 14 - Entrada de controle de muitos circuitos integrados </p>
+          </div>
+          <div class="card">
+            <p> 15 - Barramento usado por uma CPU</p>
+          </div>
         </div>
-        <div class="card">
-          <p> 2 - Responsável por operações matemáticas e booleanas </p>
-        </div>
-        <div class="card">
-          <p> 3 Armazena os dados da CPU</p>
-        </div>
-        <div class="card">
-          <p> 4 - Memória interna principal </p>
-        </div>
-        <div class="card">
-          <p> 5 - Memória interna de leitura </p>
-        </div>
-        <div class="card">
-          <p> 6 - Pode ser gravada, apagada e regravada</p>
-        </div>
-        <div class="card">
-          <p> 7 - Muito presente em SSD</p>
-        </div>
-        <div class="card">
-          <p> 8 - Método que ignora a CPU </p>
-        </div>
-        <div class="card">
-          <p> 9 - Processador mais comprado da atualidade </p>
-        </div>
-        <div class="card">
-          <p> 10 - Processador mais famoso da atualidade</p>
-        </div>
-        <div class="card">
-          <p> 11 - Usa dois núcleos </p>
-        </div>
-        <div class="card">
-          <p> 12 - Usa quatro núcleos </p>
-        </div>
-        <div class="card">
-          <p> 13 - Memória auxiliar </p>
-        </div>
-        <div class="card">
-          <p> 14 - Entrada de controle de muitos circuitos integrados </p>
-        </div>
-        <div class="card">
-          <p> 15 - Barramento usado por uma CPU</p>
-        </div>
-
+      </div>
+    </div>
+    <div class="gameover">
+      <div class="content-text">
+        <h2>GAME OVER</h2>
+        <p>TENTAR NOVAMENTE?</p>
+        <button onclick="criarCruzadinha()">Sim</button>
+        <button onclick="location.reload()">Não</button>
       </div>
     </div>
   </section>
-  <script>
+
+</body>
+
+</html>
+<script>
 
 
-    const repostaCruzadinha = [
-      ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
-      ['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'C', '', '', ''],
-      ['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'H', '', '', ''],
-      ['', '', '', '', '', '', '', '', '', 'F', '', '', '', '', 'I', '', '', ''],
-      ['', '', '', 'M', '', '', '', '', '', 'L', '', 'R', '', '', 'P', '', '', ''],
-      ['', '', 'R', 'E', 'G', 'I', 'S', 'T', 'R', 'A', 'D', 'O', 'R', 'E', 'S', '', '', ''],
-      ['', '', '', 'M', '', '5', '', '', '', 'S', '', 'M', '', '', 'E', '', '', ''],
-      ['', '', '', 'O', '', '', '', '', '', 'H', '', '', '', '', 'L', '', '', ''],
-      ['', '', '', 'R', '', '', '', '', '', '', '', '', '', '', 'E', '', '', ''],
-      ['', '', '', 'I', '7', '', '', '', '', '', '', '', '', '', 'C', 'P', 'U', ''],
-      ['', '', '', 'A', '', '', '', '', '', 'D', '', '', '', '', 'T', '', '', ''],
-      ['', '', 'A', 'D', 'R', 'E', 'S', 'S', 'B', 'U', 'S', '', '', '', '', '', '', ''],
-      ['', '', '', 'E', '', '', '', '', '', 'A', '', '', '', '', '', '', '', ''],
-      ['', 'R', 'A', 'M', '', '', '', '', '', 'L', '', '', '', '', '', '', '', ''],
-      ['', '', '', 'A', '', 'Q', 'U', 'A', 'D', 'C', 'O', 'R', 'E', '', '', '', '', ''],
-      ['', '', '', 'S', '', '', 'L', '', '', 'O', '', '', '', '', '', '', '', ''],
-      ['', '', '', 'S', '', '', 'A', '', '', 'R', '', '', '', '', '', '', '', ''],
-      ['', 'D', 'M', 'A', '', '', '', '', '', 'E', 'P', 'R', 'O', 'M', '', '', '', ''],
-      ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  const repostaCruzadinha = [
+    ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'C', '', '', ''],
+    ['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'H', '', '', ''],
+    ['', '', '', '', '', '', '', '', '', 'F', '', '', '', '', 'I', '', '', ''],
+    ['', '', '', 'M', '', '', '', '', '', 'L', '', 'R', '', '', 'P', '', '', ''],
+    ['', '', 'R', 'E', 'G', 'I', 'S', 'T', 'R', 'A', 'D', 'O', 'R', 'E', 'S', '', '', ''],
+    ['', '', '', 'M', '', '5', '', '', '', 'S', '', 'M', '', '', 'E', '', '', ''],
+    ['', '', '', 'O', '', '', '', '', '', 'H', '', '', '', '', 'L', '', '', ''],
+    ['', '', '', 'R', '', '', '', '', '', '', '', '', '', '', 'E', '', '', ''],
+    ['', '', '', 'I', '7', '', '', '', '', '', '', '', '', '', 'C', 'P', 'U', ''],
+    ['', '', '', 'A', '', '', '', '', '', 'D', '', '', '', '', 'T', '', '', ''],
+    ['', '', 'A', 'D', 'R', 'E', 'S', 'S', 'B', 'U', 'S', '', '', '', '', '', '', ''],
+    ['', '', '', 'E', '', '', '', '', '', 'A', '', '', '', '', '', '', '', ''],
+    ['', 'R', 'A', 'M', '', '', '', '', '', 'L', '', '', '', '', '', '', '', ''],
+    ['', '', '', 'A', '', 'Q', 'U', 'A', 'D', 'C', 'O', 'R', 'E', '', '', '', '', ''],
+    ['', '', '', 'S', '', '', 'L', '', '', 'O', '', '', '', '', '', '', '', ''],
+    ['', '', '', 'S', '', '', 'A', '', '', 'R', '', '', '', '', '', '', '', ''],
+    ['', 'D', 'M', 'A', '', '', '', '', '', 'E', 'P', 'R', 'O', 'M', '', '', '', ''],
+    ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  ]
 
-    ]
 
-    const cruzadinhaUsuario = [[]];
+  const cruzadinhaUsuario = [[]];
 
-    let vidasUsuario = 3;
-    function contabilizarVidas() {
-      for(let i=1;i<=vidasUsuario;i++){
-        heart.innerHTML+="<img src='heart.gif'>";
-      }
-
+  let vidasUsuario = 3;
+  function contabilizarVidas() {
+    let divGameOver = document.querySelector(".gameover");
+    heart.innerHTML = "";
+    for (let i = 1; i <= vidasUsuario; i++) {
+      heart.innerHTML += "<img src='heart.gif'>";
     }
-    function criarCruzadinha() {
-      contabilizarVidas()
-      let auxiliar = 0;
-      let estrutura = "";
-      for (let i = 0; i < 342; i++) {
-        if (i % 18 == 0 && i > 0) {
-          auxiliar++;
-          cruzadinhaUsuario.push([]);
-          cruzadinhaUsuario[auxiliar].push(document.querySelectorAll("input")[i]);
-        }
-        else {
-          cruzadinhaUsuario[auxiliar].push(document.querySelectorAll("input")[i]);
-        }
-      }
-
-      for (let linhas = 0; linhas < cruzadinhaUsuario.length; linhas++) {
-        for (let coluna = 0; coluna < cruzadinhaUsuario[linhas].length; coluna++) {
-          cruzadinhaUsuario[linhas][coluna].value = repostaCruzadinha[linhas][coluna]
-          if (repostaCruzadinha[linhas][coluna] == "") {
-            cruzadinhaUsuario[linhas][coluna].classList.add("active");
-            cruzadinhaUsuario[linhas][coluna].setAttribute("disabled", "")
-          }
-
-        }
-      }
+    if (vidasUsuario < 1) {
+      divGameOver.classList.add("active");
     }
+  }
 
+  function criarCruzadinha() {
+    vidasUsuario=3;
+    contabilizarVidas()
+    const telaInicio = document.querySelector(".inicio");
+    let divGameOver = document.querySelector(".gameover");
+    const nomeUsuario=document.querySelector(".inicio input");
+    nomeTela.innerHTML=nomeUsuario.value;
 
-    function verficarResposta() {
-      let validacao = true;
-      for (let linha = 0; linha < cruzadinhaUsuario.length; linha++) {
-        for (let coluna = 0; coluna < cruzadinhaUsuario[linha].length; coluna++) {
-          if (repostaCruzadinha[linha][coluna] != "") {
-            if (repostaCruzadinha[linha][coluna] != cruzadinhaUsuario[linha][coluna].value) {
-              validacao = false;
-              break
-            };
-          }
-          if (!validacao) {
-            break
-          }
-        }
-      }
-      if (validacao) {
-        alert("PARABÉNS VOCÊ COMPLETOU A CRUZADINHA");
+    telaInicio.classList.add("remove");
+    divGameOver.classList.remove("active");
+    let auxiliar = 0;
+    let estrutura = "";
+    for (let i = 0; i < 342; i++) {
+      if (i % 18 == 0 && i > 0) {
+        auxiliar++;
+        cruzadinhaUsuario.push([]);
+        cruzadinhaUsuario[auxiliar].push(document.querySelectorAll(".cruzadinha input")[i]);
       }
       else {
-        alert("QUE PENA, VOCÊ ERROU. TENTE NOVAMENTE");
-        contabilizarVidas()
+        cruzadinhaUsuario[auxiliar].push(document.querySelectorAll(".cruzadinha input")[i]);
       }
     }
 
-    criarCruzadinha();
-  </script>
+    for (let linhas = 0; linhas < cruzadinhaUsuario.length; linhas++) {
+      for (let coluna = 0; coluna < cruzadinhaUsuario[linhas].length; coluna++) {
+        cruzadinhaUsuario[linhas][coluna].value="";
+        cruzadinhaUsuario[linhas][coluna].setAttribute("maxlength", "1");
+        if (repostaCruzadinha[linhas][coluna] == "") {
+          cruzadinhaUsuario[linhas][coluna].classList.add("active");
+          cruzadinhaUsuario[linhas][coluna].setAttribute("disabled", "")
+        }
+
+      }
+    }
+  }
+
+
+  function verificarResposta() {
+    let validacao = true;
+    for (let linha = 0; linha < cruzadinhaUsuario.length; linha++) {
+      for (let coluna = 0; coluna < cruzadinhaUsuario[linha].length; coluna++) {
+        if (repostaCruzadinha[linha][coluna] != "") {
+          if (repostaCruzadinha[linha][coluna] != cruzadinhaUsuario[linha][coluna].value) {
+            validacao = false;
+            break
+          };
+        }
+        if (!validacao) {
+          break
+        }
+      }
+    }
+    if (validacao) {
+      alert("PARABÉNS VOCÊ COMPLETOU A CRUZADINHA");
+    }
+    else {
+      alert("QUE PENA, VOCÊ ERROU. TENTE NOVAMENTE");
+      vidasUsuario--
+      contabilizarVidas()
+    }
+  }
+
+
+</script>
 </body>
 
 </html>
