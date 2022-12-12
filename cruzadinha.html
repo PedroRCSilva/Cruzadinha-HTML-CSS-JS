@@ -425,7 +425,7 @@ header {
   ]
 
 
-  const cruzadinhaUsuario = [[]];
+  let cruzadinhaUsuario;
 
   let vidasUsuario = 3;
   function contabilizarVidas() {
@@ -440,6 +440,7 @@ header {
   }
 
   function criarCruzadinha() {
+    cruzadinhaUsuario = [[]];
     vidasUsuario = 3;
     contabilizarVidas()
     const telaInicio = document.querySelector(".inicio");
@@ -464,8 +465,8 @@ header {
 
     for (let linhas = 0; linhas < cruzadinhaUsuario.length; linhas++) {
       for (let coluna = 0; coluna < cruzadinhaUsuario[linhas].length; coluna++) {
-        // cruzadinhaUsuario[linhas][coluna].value = repostaCruzadinha[linhas][coluna];
         cruzadinhaUsuario[linhas][coluna].value = "";
+        // cruzadinhaUsuario[linhas][coluna].value = repostaCruzadinha[linhas][coluna];
         cruzadinhaUsuario[linhas][coluna].setAttribute("maxlength", "1");
         if (repostaCruzadinha[linhas][coluna] == "") {
           cruzadinhaUsuario[linhas][coluna].classList.add("active");
@@ -484,7 +485,7 @@ header {
       for (let coluna = 0; coluna < cruzadinhaUsuario[linha].length; coluna++) {
         if (repostaCruzadinha[linha][coluna] != "") {
           if (repostaCruzadinha[linha][coluna] != cruzadinhaUsuario[linha][coluna].value.toUpperCase()) {
-            console.log(repostaCruzadinha[linha][coluna],cruzadinhaUsuario[linha][coluna].value)
+            
             validacao = false;
             break
           };
